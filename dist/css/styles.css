@@ -159,7 +159,7 @@ sup {
 }
 
 a {
-  color: #fed136;
+  color: #9d8970;
   text-decoration: none;
   background-color: transparent;
 }
@@ -1998,10 +1998,10 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  color: #e0c8a6;
+  background-color: #fff4d8;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #9d8970;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2020,7 +2020,7 @@ pre code {
 }
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
+  background-color: #fff4d8;
   border-color: #ffeeb5;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
@@ -2471,19 +2471,19 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #82d8cf;
+  border-color: #82d8cf;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
+  background-color: #65ccc2;
+  border-color: #65ccc2;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
-  box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
+  background-color: #65ccc2;
+  border-color: #65ccc2;
+  box-shadow: 0 0 0 0.2rem rgb(101, 204, 194);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
@@ -2681,19 +2681,19 @@ fieldset:disabled a.btn {
 
 .btn-dark {
   color: #fff;
-  background-color: #343a40;
-  border-color: #343a40;
+  background-color: #82d8cf;
+  border-color: #82d8cf;
 }
 .btn-dark:hover {
   color: #fff;
-  background-color: #23272b;
-  border-color: #1d2124;
+  background-color: #65ccc2;
+  border-color: #65ccc2;
 }
 .btn-dark:focus, .btn-dark.focus {
   color: #fff;
-  background-color: #23272b;
-  border-color: #1d2124;
-  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+  background-color: #65ccc2;
+  border-color: #65ccc2;
+  box-shadow: 0 0 0 0.2rem rgba(101, 204, 194, 0.5);
 }
 .btn-dark.disabled, .btn-dark:disabled {
   color: #fff;
@@ -4006,6 +4006,10 @@ input[type=button].btn-block {
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
+}
+
+.navbar-logo {
+  
 }
 
 .navbar-nav {
@@ -6155,7 +6159,12 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #fff9ea !important;
+}
+
+.bg-light--team {
+  background-image: url("../assets/img/background-team.png");
+  background-size: cover;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -7573,6 +7582,10 @@ button.bg-dark:focus {
 .mt-3,
 .my-3 {
   margin-top: 1rem !important;
+}
+
+.my-3 {
+  color: #82d8cf;
 }
 
 .mr-3,
@@ -9764,6 +9777,14 @@ button.bg-dark:focus {
   text-transform: uppercase !important;
 }
 
+.text-up-down-line {
+  width: fit-content;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px 0px;
+  margin-right: 0;
+}
+
 .text-capitalize {
   text-transform: capitalize !important;
 }
@@ -9797,7 +9818,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #9d8970 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10014,6 +10035,10 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
+.section-heading--diff-color {
+  color: #222222;
+}
 .page-section h3.section-subheading {
   font-size: 1rem;
   font-weight: 400;
@@ -10067,8 +10092,8 @@ img::-moz-selection {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
   background-color: #212529;
 }
 #mainNav .navbar-toggler {
@@ -10077,7 +10102,7 @@ img::-moz-selection {
   font-size: 0.75rem;
   color: #fff;
   text-transform: uppercase;
-  background-color: #fed136;
+  background-color: #82d8cf;
   border: 0;
 }
 #mainNav .navbar-brand {
@@ -10088,7 +10113,7 @@ img::-moz-selection {
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
-  height: 1.5rem;
+  height: 3.125rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10097,7 +10122,7 @@ img::-moz-selection {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #82d8cf;
 }
 
 @media (min-width: 992px) {
@@ -10113,12 +10138,12 @@ img::-moz-selection {
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 2rem;
+    height: 3.75rem;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
@@ -10126,7 +10151,7 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-brand svg,
 #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+    height: 3.125rem;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
@@ -10140,7 +10165,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/bkg-img.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10153,7 +10178,10 @@ header.masthead .masthead-subheading {
   margin-bottom: 25px;
   font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 header.masthead .masthead-heading {
+  display: flex;
+  justify-content: center;
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 3.25rem;
@@ -10194,7 +10222,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgb(130, 216, 207, 0.7);
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -10210,13 +10238,14 @@ header.masthead .masthead-heading {
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;
   text-align: center;
-  background-color: #fff;
+  background-color: #e0c8a6;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
+  color: #9d8970;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
@@ -10276,7 +10305,7 @@ header.masthead .masthead-heading {
   width: 2px;
   margin-left: -1.5px;
   content: "";
-  background-color: #e9ecef;
+  background-color: #82d8cf;
 }
 .timeline > li {
   position: relative;
@@ -10317,10 +10346,10 @@ header.masthead .masthead-heading {
   height: 80px;
   margin-left: 0;
   text-align: center;
-  color: white;
-  border: 7px solid #e9ecef;
+  color: #fff4d8 ;
+  border: 7px solid #82d8cf;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color:#e0c8a6;
 }
 .timeline > li .timeline-image h4 {
   font-size: 10px;
@@ -10349,7 +10378,7 @@ header.masthead .masthead-heading {
 }
 .timeline .timeline-heading h4 {
   margin-top: 0;
-  color: inherit;
+  color: #9d8970;
 }
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
@@ -10437,7 +10466,7 @@ header.masthead .masthead-heading {
 .team-member img {
   width: 14rem;
   height: 14rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border: 0.5rem solid rgba(224, 200, 166);
 }
 .team-member h4 {
   margin-top: 1.5rem;
@@ -10445,13 +10474,14 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-color: #212529;
+  background-color: #e0c8a6;
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
+
   background-position: center;
 }
 section#contact .section-heading {
-  color: #fff;
+  color: #222222;
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
@@ -10502,4 +10532,18 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.product {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.other-color{
+  color: #65ccc2;
+}
+
+.team-subheading {
+  color: #9d8970;
 }
